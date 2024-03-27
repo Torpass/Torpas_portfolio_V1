@@ -9,7 +9,7 @@ export default function ProjectCard({tittle, description, image, link, isExpande
     return (
             <div className="px-2">
                 <div className="bg-[#F5F5F5]  dark:bg-[#1B1B1B] rounded-md px-1  relative">
-                    <div className="flex justify-between items-center p-2  gap-x-2 mt-14 ">
+                    <div className="flex justify-between items-center p-2  gap-x-2 mt-8">
                         <Image
                         onClick={handleClick}
                         width={200}

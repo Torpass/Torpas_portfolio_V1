@@ -162,13 +162,12 @@ function Homepage() {
         </div>
 
         <div className=" dark:bg-[#1E1E1E] bg-white border dark:border-neutral-600 border-neutral-400/60  shadow-xl rounded-lg min-h-[50px] col-span-2 row-span-2 relative ">
-
-
           <div className=" absolute w-full p-2 z-20">
             <p className="text-xs">Projects</p>
-            <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
+            <div className="w-full h-[0.9px] mb-14 dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
           </div>
 
+          
           <ProjectCard
             tittle="eCommerce Web Application"
             description="Implement a transformative eCommerce platform using technologies such as Node.js, TypeScript, React, Git, and SQL"
@@ -182,10 +181,9 @@ function Homepage() {
             image="/chat.png"
             link="https://github.com/Torpass/realtime-chat-application"
           />
-
-          
-      
         </div>
+
+
         <div className="dark:bg-[#1E1E1E] bg-white border dark:border-neutral-600 border-neutral-400/60 shadow-xl rounded-lg min-h-[50px] col-span-2  relative">
           <div className=" absolute w-full p-2 z-20">
             <p className="text-xs">Get in touch</p>
