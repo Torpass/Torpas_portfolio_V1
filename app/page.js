@@ -40,14 +40,14 @@ function Homepage() {
           <div className=" absolute w-full p-2 z-10">
             <div className="flex justify-between items-center ">
               <p className="text-xs">Location</p>
-              <p className="text-neutral-500 text-xs ">New York</p>
+              <p className="text-neutral-500 text-xs ">Venezuela Lara</p>
             </div>
             <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
           </div>
           <motion.img
             whileHover={{ scale: 3 }}
-            className="h-full w-full duration-300 transition-all ease-in-out object-cover"
-            src={theme == "dark" ? "/lightm.bmp" : "/map.webp"}
+            className="h-full w-full duration-300 opacity-50 transition-all ease-in-out object-cover"
+            src={theme == "dark" ? "/Bqto.png" : "/BqtoWhite.jpeg"}
             alt=""
           />
         </motion.div>
@@ -75,10 +75,13 @@ function Homepage() {
                 for a collab 🦾
               </p>
 
-              <button className="text-xs flex w-full items-center justify-between border dark:border-neutral-600 border-neutral-400/60  mt-3 rounded-full p-1 px-2 dark:bg-neutral-700/40 sm:w-full">
-                <span>Contact me</span>
-                <PiArrowUpRight />
-              </button>
+              <a target="_blank" href="https://www.linkedin.com/in/pastor-jim%C3%A9nez-887798212/">
+                <button className="text-xs flex w-full items-center justify-between border dark:border-neutral-600 border-neutral-400/60  mt-3 rounded-full p-1 px-2 dark:bg-neutral-700/40 sm:w-full">
+                  <span>Contact me</span>
+                  <PiArrowUpRight />
+                </button>
+              </a>
+              
             </div>
           </div>
         </div>
@@ -104,7 +107,7 @@ function Homepage() {
         </motion.div>
         <div className="dark:bg-[#1E1E1E] bg-white border dark:border-neutral-600 border-neutral-400/60 shadow-xl rounded-lg col-span-2 row-span-2 relative  overflow-hidden  ">
           <div className=" absolute w-full p-2 z-20">
-            <p className="text-xs">Experience & Education</p>
+            <p className="text-xs">Education</p>
             <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
           </div>
 
@@ -114,144 +117,46 @@ function Homepage() {
 
           <div className=" overflow-y-auto h-[340px] overflow-hidden scrollbar-hide scroll-smooth relative ">
             {/* Starts */}
-            <div className="flex gap-x-3 mt-16 px-2  ">
+            <div className="flex gap-x-3 mt-16 px-2">
               <p className="dark:text-neutral-400  text-xs w-20 shrink-0  ">
-                2002 -- 2012
+                2022 -- 2025
               </p>
               <div>
-                <h4 className="text-xs font-bold">Creative Studio Owner</h4>
+                <h4 className="text-xs font-bold">Bachelor's Degree: Computer Science</h4>
                 <p className="text-[11px] text-neutral-500">
-                  Self-employed at my own creative studio, delivering innovative
-                  design solutions and giving value to your brand experience.
+                  Bachelor of Science in Computer Science at the Instituto Universitario Jesús Obrero in Lara, Venezuela. Over three years, I explore software engineering, databases, algorithms, web development, and operating systems. My passion for technology drives me forward as I continue to learn and contribute to meaningful projects.
+                </p>
+              </div>
+            </div>
+            
+            <div className="px-2 my-3 ">
+              <div className="w-full h-[0.9px] dark:bg-neutral-800  bg-neutral-400/40 " />
+            </div>
+
+            <div className="flex gap-x-3 px-2 relative ">
+              <p className="dark:text-neutral-400  text-xs w-20 shrink-0  ">
+                2016 -- 2021
+              </p>
+              <div>
+                <h4 className="text-xs font-bold">High School Diploma: Technology</h4>
+                <p className="text-[11px] text-neutral-500">
+                  During my time there, I cultivated a strong foundation in technology. My coursework included practical experience with programming languages, algorithms, and network fundamentals. I am well-versed in the intricacies of technology, and my passion for learning continues to drive me forward.
                 </p>
               </div>
             </div>
 
-            <div className="px-2 my-3 ">
+            <div className="px-2 my-5 ">
               <div className="w-full h-[0.9px] dark:bg-neutral-800  bg-neutral-400/40 " />
             </div>
-
-            <div className="flex  gap-x-3 px-2 relative ">
-              <p className="dark:text-neutral-400  text-xs w-20 shrink-0  ">
-                2020 -- 2022
-              </p>
-              <div>
-                <h4 className="text-xs font-bold">Nike Headquarters</h4>
-                <p className="text-[11px] text-neutral-500">
-                  Designer & Creative Director
-                </p>
-              </div>
-            </div>
-
-            <div className="px-2 my-3 ">
-              <div className="w-full h-[0.9px] dark:bg-neutral-800  bg-neutral-400/40 " />
-            </div>
-
-            <div className="flex  gap-x-3  px-2 relative ">
-              <p className="dark:text-neutral-400  text-xs w-20 shrink-0  ">
-                2018 -- 2020
-              </p>
-              <div>
-                <h4 className="text-xs font-bold">Spotify</h4>
-                <p className="text-[11px] text-neutral-500">
-                  Designer & Art Director.
-                </p>
-              </div>
-            </div>
-
-            <div className="px-2 my-3 ">
-              <div className="w-full h-[0.9px] dark:bg-neutral-800  bg-neutral-400/40 " />
-            </div>
-
-            <div className="flex  gap-x-3  px-2 relative ">
-              <p className="dark:text-neutral-400  text-xs w-20 shrink-0  ">
-                2016 -- 2018
-              </p>
-              <div>
-                <h4 className="text-xs font-bold">Apple</h4>
-                <p className="text-[11px] text-neutral-500">Product Designer</p>
-              </div>
-            </div>
-
-            <div className="px-2 my-3 ">
-              <div className="w-full h-[0.9px] dark:bg-neutral-800  bg-neutral-400/40 " />
-            </div>
-
-            <div className="flex  gap-x-3  px-2 relative ">
-              <p className="dark:text-neutral-400  text-xs w-20 shrink-0  ">
-                2014 -- 2016
-              </p>
-              <div>
-                <h4 className="text-xs font-bold">Royal Academy of Arts</h4>
-                <p className="text-[11px] text-neutral-500">
-                  Graduate Master’s Degree
-                </p>
-              </div>
-            </div>
-
-            <div className="px-2 my-3 ">
-              <div className="w-full h-[0.9px] dark:bg-neutral-800  bg-neutral-400/40 " />
-            </div>
-
-            <div className="flex  gap-x-3  px-2 relative ">
-              <p className="dark:text-white  text-xs w-20 shrink-0  ">
-                2012 -- 2016
-              </p>
-              <div>
-                <h4 className="text-xs font-bold">Zurich University of Arts</h4>
-                <p className="text-[11px] text-neutral-500">
-                  Visual Communication
-                </p>
-              </div>
-            </div>
-
-            <div className="px-2 my-3 ">
-              <div className="w-full h-[0.9px] dark:bg-neutral-800  bg-neutral-400/40 " />
-            </div>
-
-            <div className="flex  gap-x-3  px-2 relative ">
-              <p className="dark:text-white  text-xs w-20 shrink-0  ">
-                2011 -- 2012
-              </p>
-              <div>
-                <h4 className="text-xs font-bold">Vogue France</h4>
-                <p className="text-[11px] text-neutral-500">Graphic Designer</p>
-              </div>
-            </div>
-
-            <div className="px-2 my-3 ">
-              <div className="w-full h-[0.9px] dark:bg-neutral-800  bg-neutral-400/40 " />
-            </div>
-
-            <div className="flex  gap-x-3  px-2 relative ">
-              <p className="dark:text-white  text-xs w-20 shrink-0  ">
-                2010 -- 2011
-              </p>
-              <div>
-                <h4 className="text-xs font-bold">Vignelli Associates</h4>
-                <p className="text-[11px] text-neutral-500">Internship</p>
-              </div>
-            </div>
-
-            <div className="px-2 my-3 ">
-              <div className="w-full h-[0.9px] dark:bg-neutral-800  bg-neutral-400/40 " />
-            </div>
-
-            <div className="flex  gap-x-3  mb-6 px-2 relative ">
-              <p className="dar:text-white  text-xs w-20 shrink-0  ">
-                2010 -- 2011
-              </p>
-              <div>
-                <h4 className="text-xs font-bold">Norm Zurich</h4>
-                <p className="text-[11px] text-neutral-500">Internship</p>
-              </div>
-            </div>
+             
           </div>
           {/* Gradient  */}
           <div className=" bg-gradient-to-t  w-full absolute z-10 from-white via-white dark:from-[#1E1E1E] dark:via-[#1E1E1E] to-transparent bottom-0   h-12 transition-all ease-in duration-200" />
           {/* gradient ends */}
         </div>
         <div className=" dark:bg-[#1E1E1E] bg-white border dark:border-neutral-600 border-neutral-400/60  shadow-xl rounded-lg min-h-[50px] col-span-2 row-span-2 relative ">
+
+
           <div className=" absolute w-full p-2 z-20">
             <p className="text-xs">Projects</p>
             <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
@@ -263,50 +168,6 @@ function Homepage() {
                 <Image
                   width={200}
                   height={200}
-                  className="w-14 h-14 rounded-full object-cover"
-                  src="/jo4.jpeg"
-                  alt=""
-                />
-
-                <div>
-                  <p className="text-xs">Fusion Pro Presentation</p>
-                  <p className="text-xs">
-                    I've come up with something truly unique
-                  </p>
-                </div>
-
-                <ul className="menu">
-                  <a href="#0"></a>
-                </ul>
-              </div>
-            </div>
-            <div className="bg-[#F5F5F5]  dark:bg-[#1B1B1B] rounded-md px-1  relative">
-              <div className="flex justify-between items-center p-2  gap-x-2 mt-4">
-                <Image
-                  width={300}
-                  height={300}
-                  className="w-14 h-14 rounded-full object-cover"
-                  src="/jo4.jpeg"
-                  alt=""
-                />
-
-                <div>
-                  <p className="text-xs">Fusion Pro Presentation</p>
-                  <p className="text-xs">
-                    I've come up with something truly unique
-                  </p>
-                </div>
-
-                <ul className="menu">
-                  <a href="#0"></a>
-                </ul>
-              </div>
-            </div>
-            <div className="bg-[#F5F5F5]  dark:bg-[#1B1B1B] rounded-md px-1  relative">
-              <div className="flex justify-between items-center p-2  gap-x-2 mt-4">
-                <Image
-                  width={300}
-                  height={300}
                   className="w-14 h-14 rounded-full object-cover"
                   src="/jo4.jpeg"
                   alt=""
