@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import ProjectCard from "./components/projectCard";
 import { motion } from "framer-motion";
 import {
   PiArrowUpRight,
@@ -27,6 +28,11 @@ import Image from "next/image";
 
 function Homepage() {
   const { theme } = useTheme();
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
 
   return (
     <div className=" w-full  px-4 pt-8 max-w-6xl mx-auto">
@@ -154,6 +160,7 @@ function Homepage() {
           <div className=" bg-gradient-to-t  w-full absolute z-10 from-white via-white dark:from-[#1E1E1E] dark:via-[#1E1E1E] to-transparent bottom-0   h-12 transition-all ease-in duration-200" />
           {/* gradient ends */}
         </div>
+
         <div className=" dark:bg-[#1E1E1E] bg-white border dark:border-neutral-600 border-neutral-400/60  shadow-xl rounded-lg min-h-[50px] col-span-2 row-span-2 relative ">
 
 
@@ -162,31 +169,22 @@ function Homepage() {
             <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
           </div>
 
-          <div className="mt-8 px-2">
-            <div className="bg-[#F5F5F5]  dark:bg-[#1B1B1B] rounded-md px-1  relative">
-              <div className="flex justify-between items-center p-2  gap-x-2 mt-14">
-                <Image
-                  width={200}
-                  height={200}
-                  className="w-14 h-14 rounded-full object-cover"
-                  src="/jo4.jpeg"
-                  alt=""
-                />
+          <ProjectCard
+            tittle="eCommerce Web Application"
+            description="Implement a transformative eCommerce platform using technologies such as Node.js, TypeScript, React, Git, and SQL"
+            image="/eCcmmerceLogo.jpeg"
+            link="https://github.com/AndresBlade/my-commerce"
+          />
 
-                <div>
-                  <p className="text-xs">Fusion Pro Presentation</p>
-                  <p className="text-xs">
-                    I've come up with something truly unique
-                  </p>
-                </div>
+          <ProjectCard
+            tittle="Real-Time Chat Application"
+            description="Developed a real-time chat application integrated Next.js, TypeScript, Socket.IO, Git, and Redis. "
+            image="/chat.png"
+            link="https://github.com/Torpass/realtime-chat-application"
+          />
 
-                <ul className="menu">
-                  <a href="#0"></a>
-                </ul>
-              </div>
-            </div>
-          </div>
-          {/* <Products /> */}
+          
+      
         </div>
         <div className="dark:bg-[#1E1E1E] bg-white border dark:border-neutral-600 border-neutral-400/60 shadow-xl rounded-lg min-h-[50px] col-span-2  relative">
           <div className=" absolute w-full p-2 z-20">
