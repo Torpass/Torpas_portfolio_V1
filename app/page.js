@@ -9,10 +9,11 @@ import {
   PiArrowDownThin,
   PiGithubLogoThin,
 } from "react-icons/pi";
+import SocialIcon from "./components/socialIcon";
+import { ImLinkedin } from "react-icons/im";
+import { GrGithub } from "react-icons/gr";
+import { MdEmail } from "react-icons/md";
 
-import { IoIosMailUnread } from "react-icons/io";
-
-import { RiTwitterXLine } from "react-icons/ri";
 
 import { useTheme } from "next-themes";
 
@@ -190,48 +191,40 @@ function Homepage() {
             <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
           </div>
 
+
           <div className="mt-14 mb-4">
             <div className="flex justify-center gap-x-2 px-2">
-              <Tooltip showArrow={true} content="X (Twitter)" color="#161616">
-                <Link
-                  href={"https://twitter.com/Joenaldo"}
-                  className="rounded-full border dark:border-neutral-600 cursor-pointer border-neutral-400/60 p-2 w-16 h-16 flex items-center justify-center"
-                >
-                  <RiTwitterXLine className="text-xl" />
-                </Link>
-              </Tooltip>
-              <Tooltip showArrow={true} content="GitHub" color="#161616">
-                <Link
-                  href={"https://github.com/Joscriptt"}
-                  className="rounded-full border dark:border-neutral-600 cursor-pointer border-neutral-400/60 p-2 w-16 h-16 flex items-center justify-center"
-                >
-                  <PiGithubLogoThin className="text-xl" />
-                </Link>
-              </Tooltip>
-              <Tooltip showArrow={true} content="Behance" color="#161616">
-                <Link
-                  href={"https://twitter.com/Joenaldo"}
-                  className="rounded-full border dark:border-neutral-600 cursor-pointer border-neutral-400/60 p-2 w-16 h-16 flex items-center justify-center"
-                >
-                  <PiBehanceLogoThin className="text-xl" />
-                </Link>
-              </Tooltip>
-              <Tooltip showArrow={true} content="E-mail" color="#161616">
-                <Link
-                  href={"https://twitter.com/Joenaldo"}
-                  className="rounded-full border dark:border-neutral-600 cursor-pointer border-neutral-400/60 p-2 w-16 h-16 flex items-center justify-center"
-                >
-                  <IoIosMailUnread className="text-xl" />
-                </Link>
-              </Tooltip>
+
+              <SocialIcon
+              link={"https://www.linkedin.com/in/pastor-jim%C3%A9nez-887798212/"}
+              content={"Linkedin"}
+              RiIcon={ImLinkedin}
+              />
+
+              <SocialIcon
+              link={"https://github.com/Torpass"}
+              content={"Github"}
+              RiIcon={GrGithub}
+              />
+
+                <SocialIcon
+                link={"https://www.gmail.com"}
+                content={"Gmail"}
+                RiIcon={MdEmail}
+                />
+              
+              
             </div>
           </div>
         </div>
+
+
+
         <div className="dark:bg-[#1E1E1E] bg-white border dark:border-neutral-600 border-neutral-400/60 overflow-hidden relative shadow-xl rounded-lg min-h-[50px] col-span-2 row-span-3 md:row-span-2 ">
           <div className=" absolute w-full p-2 z-10">
             <div className="flex justify-between items-center ">
               <p className="text-xs">Latest Work</p>
-              <p className="text-neutral-500 text-xs ">Waitlist</p>
+              <p className="text-neutral-500 text-xs ">ECOMODA</p>
             </div>
             <div className="w-full h-[0.4px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
           </div>
@@ -240,13 +233,13 @@ function Homepage() {
             width={900}
             height={300}
             className="h-full duration-300 hover:scale-110 transition-all ease-in-out object-cover"
-            src={"/jo8.jpeg"}
-            alt=""
+            src={"/Ecomoda.jpeg"}
+            alt="Ecomoda project"
           />
         </div>
         <div className="dark:bg-[#1E1E1E] bg-white border dark:border-neutral-600 border-neutral-400/60 shadow-xl rounded-lg col-span-2  relative  overflow-hidden  ">
           <div className=" absolute w-full p-2 z-20">
-            <p className="text-xs">Side Projects</p>
+            <p className="text-xs">Interented in</p>
             <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
           </div>
 
@@ -258,11 +251,11 @@ function Homepage() {
             {/* Starts */}
             <div className="flex gap-x-3 mt-14 px-2  ">
               <p className="dark:text-white  text-xs w-20 shrink-0  ">
-                Since 2023
+                Since 2022
               </p>
               <div>
-                <h4 className="text-xs font-bold">WebFlow</h4>
-                <p className="text-[11px] text-neutral-500">Official partner</p>
+                <h4 className="text-xs font-bold">Software architecture</h4>
+                <p className="text-[11px] text-neutral-500">Learning diseing patterns</p>
               </div>
             </div>
 
@@ -271,25 +264,15 @@ function Homepage() {
             </div>
 
             <div className="flex  gap-x-3 px-2 relative ">
-              <p className="text-white  text-xs w-20 shrink-0  ">Since 2021</p>
+              <p className="text-white  text-xs w-20 shrink-0  ">Since 2020</p>
               <div>
-                <h4 className="text-xs font-bold">Awwward</h4>
-                <p className="text-[11px] text-neutral-500">Jury Member</p>
+                <h4 className="text-xs font-bold">Finances</h4>
+                <p className="text-[11px] text-neutral-500">Build a Startup here in Venezuela</p>
               </div>
             </div>
 
             <div className="px-2 my-3 ">
               <div className="w-full h-[0.9px] dark:bg-neutral-800  bg-neutral-400/40 " />
-            </div>
-
-            <div className="flex  gap-x-3  px-2 relative ">
-              <p className="dark:text-white  text-xs w-20 shrink-0  ">
-                Since 2018
-              </p>
-              <div>
-                <h4 className="text-xs font-bold">ADC Club Global</h4>
-                <p className="text-[11px] text-neutral-500">Jury Member</p>
-              </div>
             </div>
 
             <div className="px-2 my-3 ">
@@ -300,51 +283,8 @@ function Homepage() {
           <div className=" bg-gradient-to-t  w-full absolute z-10 from-white via-white dark:from-[#1E1E1E] dark:via-[#1E1E1E] to-transparent bottom-0   h-12 transition-all ease-in duration-200" />
           {/* gradient ends */}
         </div>
-        <div className="dark:bg-[#1E1E1E] bg-white border dark:border-neutral-600 border-neutral-400/60 shadow-xl rounded-lg z-20 h-44 relative">
-          <div className=" absolute w-full p-2 z-20">
-            <p className="text-xs">Newsletter</p>
-            <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
-          </div>
-
-          <div className="mt-24 flex flex-col items-center w-full px-2 ">
-            <input
-              className=" w-full rounded-full text-sm p-1 placeholder:text-neutral-700 outline-none border dark:border-neutral-600 border-neutral-400/60 pl-6 bg-neutral-900"
-              type="email"
-              placeholder="name@email.com"
-            />
-            <button className="text-xs  w-full  border dark:border-neutral-600 border-neutral-400/60  mt-2 rounded-full p-1 px-2 dark:bg-neutral-700/40">
-              <span>Contact me</span>
-            </button>
-          </div>
-        </div>
-        <motion.div
-          drag
-          dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
-          dragElastic={1}
-          className="dark:bg-[#1E1E1E] bg-white border dark:border-neutral-600 border-neutral-400/60 shadow-xl rounded-lg h-44 p-2"
-        >
-          <div>
-            <p className="text-[10px] mt-8">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
-              optio vel officia.
-            </p>
-
-            <div className="flex items-center gap-x-2 mt-7">
-              <Image
-                height={400}
-                width={400}
-                className="w-8 h-8 rounded-full object-cover"
-                src="/jo2.jpeg"
-                alt=""
-              />
-
-              <div className="">
-                <p className="text-xs">JoScript</p>
-                <p className="text-xs">Founder, Joscript</p>
-              </div>
-            </div>
-          </div>
-        </motion.div>
+       
+        
         <div className="  rounded-lg  grid grid-cols-2 gap-2 col-span-2 row-span-2 z-40">
           <motion.div
             drag
@@ -357,7 +297,7 @@ function Homepage() {
               <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
             </div>
             <div className="mt-10  w-full flex justify-center items-center">
-              <h1 className="text-8xl">17</h1>
+              <h1 className="text-8xl">2+</h1>
             </div>
           </motion.div>
           <div className="dark:bg-[#1E1E1E] bg-white border dark:border-neutral-600 border-neutral-400/60 shadow-xl rounded-lg h-44 p-2 relative z-40">
@@ -368,14 +308,19 @@ function Homepage() {
               </div>
             </div>
             <div className="mt-24 w-full">
-              <button className="text-xs flex w-full items-center justify-between border dark:border-neutral-600 border-neutral-400/60   rounded-full p-1 px-2 dark:bg-neutral-700/40">
-                <span>View</span>
-                <PiArrowUpRight />
-              </button>
-              <button className="text-xs flex w-full mt-3 items-center justify-between border dark:border-neutral-600 border-neutral-400/60   rounded-full p-1 px-2 dark:bg-neutral-700/40">
-                <span>Download</span>
-                <PiArrowDownThin />
-              </button>
+              <a href="https://drive.google.com/file/d/1E1EAedI761_jK_L8ajt7zVTIRZPWYcA-/view?usp=sharing" target="_blank">
+                <button className="text-xs flex w-full items-center justify-between border dark:border-neutral-600 border-neutral-400/60   rounded-full p-1 px-2 dark:bg-neutral-700/40">
+                  <span>View</span>
+                  <PiArrowUpRight />
+                </button>
+              </a>
+              <a href="/Pastor Jimenez CV.pdf" download>
+                <button className="text-xs flex w-full mt-3 items-center justify-between border dark:border-neutral-600 border-neutral-400/60   rounded-full p-1 px-2 dark:bg-neutral-700/40">
+                  <span>Download</span>
+                  <PiArrowDownThin />
+                </button>
+              </a>
+              
             </div>
           </div>
         </div>
