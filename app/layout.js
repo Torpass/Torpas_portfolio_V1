@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 // import { Inter } from "next/font/google";
 import Theming from "@/components/providers/Theme";
 // import UiProvider from "@/components/providers/UiProvider";
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <Analytics/>
         {/* <body className={`${font.className} `}> */}
         <Theming>
           <HeaderPage />

@@ -217,7 +217,7 @@ function Homepage() {
             </div>
           </div>
         </div>
-
+npm run dev 
 
 
         <div className="dark:bg-[#1E1E1E] bg-white border dark:border-neutral-600 border-neutral-400/60 overflow-hidden relative shadow-xl rounded-lg min-h-[50px] col-span-2 row-span-3 md:row-span-2 ">
